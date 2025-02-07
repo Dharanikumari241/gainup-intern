@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyers Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+                                                        <!--nav bar-->
+
+                                                        
+    <nav class="navbar navbar-light align-items-center bg-light px-3 d-flex">
+        <div class="profile d-flex  w-75 gap-3 align-items-center ml-auto">
+            <h1 class="navbar-title ml-6">Buyers Portal</h1>
+            <span class="ml-3 position-relative">
+                <i class="bi bi-bell-fill"></i>
+                <span class="notification ">1</span> 
+            </span>
+            
+            <span><i class="bi bi-gear-fill"></i></span>
+            <span><i class="bi bi-person-fill"></i></span>
+            
+
+        </div>
+        <div class="User d-flex flex-column ml-auto w-0">
+            <h6 class="text-center">User Profile</h6>
+            <p class="mb-1 text-center">developer</p>
+        </div>
+    </nav>
+                                                            <!--logo-->
+
+
+    <div class="first-topic1">
+        <div class="sidebar d-flex flex-column" id="sidebar">
+            <img class="filter1" src="image/gain.png" alt="">
+
+            <ul>
+                <li class="chart1"><i class="bi bi-bar-chart-fill"></i> <span>Dashboard</span></li>
+                <li class="chart2"><i class="bi bi-ticket-perforated-fill"></i> <span>Digital Catalogue</span></li>
+            </ul>
+        </div>
+
+                                                           <!--catgories-->
+      
+
+        <div class="first-topic2">
+            <div class="category-filter ">
+                <h5>Categories</h5>
+                <div class="category-buttons">
+                    <ul class="list-unstyled">
+                        <label><input type="checkbox" class="btn category" id="shirt"  datacategory="Shirts" onclick="filterProducts()"> Shirt</label>
+                        <label><input type="checkbox" class="btn category" id="tshirt"  datacategory="T Shirts" onclick="filterProducts()"> T-shirt</label>
+                        <label><input type="checkbox"  class="btn category" id="shorts"  datacategory="Shorts" onclick="filterProducts()"> Shorts</label>
+                        <label><input type="checkbox" class="btn category" id="pants"  datacategory="pants"onclick="filterProducts()"> Pants</label>
+                    </ul>
+                </div>
+            </div>
+
+                       
+                                            <!-- t-Shirts -->
+
+
+                <div class="product-section d-flex flex-wrap">
+                    <div class="product-card card" id=" formal-shirt">
+                        <div class="img-container">
+                            <img src="image/shirt1.webp" class="card-img-top" alt="Shirt">
+                            <button class="readmore">Read more</button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Formal Shirt</h5>
+                            <p class="card-text">Symbol Men's Solid Cotton Shirt | Casual | Plain | Full Sleeve | Summer-Regular Fit (Available in Plus Size)</p>
+                        </div>
+                    </div>
+               <div class="product-card card" data-category="Shirts" id=" formal-shirt">
+                    <img src="image/shirt2.webp" class="card-img-top" alt="Shirt">
+                      <button class="readmore">Read more</button>
+                      <div class="card-body">
+                   <h5 class="card-title">Formal Shirt</h5>
+                       <p class="card-text">Symbol Men's Solid Cotton Shirt | Casual | Plain | Full Sleeve | Summer-Regular Fit (Available in Plus Size)</p>
+                     </div>
+              </div>
+                    <div class="product-card card" data-category="Shirts" id=" formal-shirt">
+                        <img src="image/shirt3.webp" class="card-img-top" alt="Shirt">
+                        <button class="readmore">Read more</button>
+                        <div class="card-body">
+                            <h5 class="card-title">Formal Shirt</h5>
+                            <p class="card-text">Symbol Men's Solid Cotton Shirt | Casual | Plain | Full Sleeve | Summer-Regular Fit (Available in Plus Size)</p>
+                        </div>
+                    </div>
+                    <div class="product-card card" data-category="Shirts" id=" formal-shirt">
+                        <img src="image/shirt4.webp" class="card-img-top" alt="Shirt">
+                        <button class="readmore">Read more</button>
+                        <div class="card-body">
+                            <h5 class="card-title">Formal Shirt</h5>
+                            <p class="card-text">Symbol Men's Solid Cotton Shirt | Casual | Plain | Full Sleeve | Summer-Regular Fit (Available in Plus Size)</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card card" data-category="Shirts" id=" formal-shirt">
+                        <img src="image/shirt5.jpg" class="card-img-top" alt="Shirt">
+                        <button class="readmore">Read more</button>
+                        <div class="card-body">
+                            <h5 class="card-title">Formal Shirt</h5>
+                            <p class="card-text">Symbol Men's Solid Cotton Shirt | Casual | Plain | Full Sleeve </p>
+                        </div>
+                    </div>
+
+            
+
+                
+
+
+                                               <!-- t-Shirts -->
+
+
+
+                    <div class="product-card image" data-category="TShirts" id=" tshirts">
+                        <img src="image/tshirt1.webp" class="card-img-top" alt="Shirt">
+                        <button class="readmore">Read more</button>
+                        <div class="card-body">
+                            <h5 class="card-title">Formal Shirt</h5>
+                            <p class="card-text">Men's Solid Cotton Blend Polo T-Shirt Has A Short Sleeve Casual | Plain | Full Sleeve </p>
+                        </div>
+                    </div>
+                    <!-- t-Shirts -->
+                    <div class="product-card card" data-category="TShirts" id=" tshirts">
+                        <img src="image/tshirt2.webp" class="card-img-top" alt="T-shirt">
+                        <button class="readmore">Read more</button>
+                        <div class="card-body">
+                            <h5 class="card-title">T-shirt</h5>
+                            <p class="card-text">Men's Solid Cotton Blend Polo T-Shirt Has A Short Sleeve</p>
+                        </div>
+                    </div>
+                    <div class="product-card card" data-category="TShirts" id=" tshirts">
+                        <img src="image/tshirt3.webp" class="card-img-top" alt="T-shirt">
+                        <button class="readmore">Read more</button>
+                        <div class="card-body">
+                            <h5 class="card-title">T-shirt</h5>
+                            <p class="card-text"> Men's Solid Cotton Blend Polo T-Shirt Has A Short Sleeve </p>
+                        </div>
+                    </div>
+                    <div class="product-card card" data-category="TShirts" id=" tshirts">
+                        <img src="image/tshirt4.webp" class="card-img-top" alt="T-shirt">
+                        <button class="readmore">Read more</button>
+                        <div class="card-body">
+                            <h5 class="card-title">T-shirt</h5>
+                            <p class="card-text"> Men's Solid Cotton Blend Polo T-Shirt Has A Short Sleeve </p>
+                        </div>
+                    </div>
+
+                    <div class="product-card card" data-category="TShirts" id=" tshirts">
+                        <img src="image/tshirt5.webp" class="card-img-top" alt="T-shirt">
+                        <button class="readmore">Read more</button>
+                        <div class="card-body">
+                            <h5 class="card-title">T-shirt</h5>
+                            <p class="card-text"> Men's Solid Cotton Blend Polo T-Shirt Has A Short Sleeve </p>
+                        </div>
+                    </div>
+
+                    <div class="product-card card" data-category="TShirts" id=" tshirts">
+                        <img src="image/tshirt6.webp" class="card-img-top" alt="T-shirt">
+                        <button class="readmore">Read more</button>
+                        <div class="card-body">
+                            <h5 class="card-title">T-shirt</h5>
+                            <p class="card-text"> Men's Solid Cotton Blend Polo T-Shirt Has A Short Sleeve </p>
+                        </div>
+                    </div>
+              
+    <script src="script.js"></script> 
+</body>
+</html>
+
+
