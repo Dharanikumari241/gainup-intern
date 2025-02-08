@@ -23,31 +23,7 @@
 
 
 
-        function FadeIn(element) {
-            element.style.display = "block";
-            element.style.opacity = 0;
-            let opacity = 0;
-            let fadeEffect = setInterval(function () {
-                opacity += 0.2; 
-                element.style.opacity = opacity;
-                if (opacity >= 1) {
-                    clearInterval(fadeEffect);
-                }
-            }, 30); 
-        }
-    
-        function FadeOut(element, callback) {
-            let opacity = 1;
-            let fadeEffect = setInterval(function () {
-                opacity -= 0.2; 
-                element.style.opacity = opacity;
-                if (opacity <= 0) {
-                    clearInterval(fadeEffect);
-                    element.style.display = "none";
-                    if (callback) callback();
-                }
-            }, 30); 
-        }
+        
 
 
 
